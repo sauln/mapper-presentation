@@ -76,6 +76,9 @@ how are they supposed to make sense of a whole bunch of data?!
 
 <img src="coffeetodonut.jpg" alt="some_text" style="width:500px;height:250px;">
 
+
+.footnote[.red.bold[\*]https://www.nga.gov/content/ngaweb/features/the-serial-impulse/bruce-nauman.html]
+
 ]
 
 
@@ -87,6 +90,7 @@ how are they supposed to make sense of a whole bunch of data?!
 ]
 .right-column[
 * assume data has shape and that the shape is important
+  * or is sampled from an underlying shape that we want to figure out! 
 * use local information to describe global shape
 * pretty pictures
 
@@ -143,7 +147,8 @@ Studies a function on a space through its level sets.
 
 $$ f: X \to \mathbb{R} $$
 
-Let $a \sim b $ for $a,b \in X$ if $f(a)$ is connected to $f(b)$ within the same level set.
+Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\) within the same level set.
+
 
 ]
 
@@ -160,10 +165,9 @@ Studies a topological space through a function that maps the space to the real l
 
 $$ f: X \to \mathbb{R} $$
 
-Let $a \sim b $ for $a,b \in X$ if $f(a)$ is connected to $f(b)$ within the same level set.
+Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\) within the same level set.
 
-Then the Reeb graph is the quotient space $X / \sim$ endowed with the quotient topology.
-
+Then the Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
 ]
 
 ---
@@ -189,9 +193,9 @@ Studies a topological space through a function that maps the space to the real l
 
 $$ f: X \to \mathbb{R} $$
 
-Let $a \sim b $ for $a,b \in X$ if $f(a)$ is connected to $f(b)$ within the same level set.
+Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\) within the same level set.
 
-Then the Reeb graph is the quotient space $X / \sim$ endowed with the quotient topology.
+Then the Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
 ]
 
 ---
@@ -200,10 +204,10 @@ Then the Reeb graph is the quotient space $X / \sim$ endowed with the quotient t
   ## Level set
 ]
 .right-column[
-Say we have a function `\(f:X \to \mathbb{R}\)` from
-(a function from our object [a chair] to the real line, maybe it's defined as height)
+Say we have a function \\(f:X \to \mathbb{R}\\) from
+(a function from our object to the real line, maybe it's defined as height)
 
-the *level set* at each `\(a \in \mathbb{R}\)` is defined as
+the *level set* at each \\(a \in \mathbb{R}\\) is defined as
 $$\{ x \in X \mid f(x) = a \}$$
 
 (all the pieces that are at the same height)
@@ -216,13 +220,14 @@ $$\{ x \in X \mid f(x) = a \}$$
   ## Connected components
 ]
 .right-column[
-Let \(\sim\) be a relation on $X$ such that for $a, b\in X$, $a\sim b$ if they are in the same connected component of a level set.
+Let \\(\sim\\) be a relation on \\(X\\) such that for \\(a, b\in X\\), \\(a\sim b\\) if they are in the same connected component of a level set.
 
 (Represent each leg of the chair at each height by one point)
 
 ]
 
 ---
+
 .left-column[
   ## Level set
   ## Connected components
@@ -232,6 +237,19 @@ Let \(\sim\) be a relation on $X$ such that for $a, b\in X$, $a\sim b$ if they a
   White board plz
 ]
 
+---
+
+What happens when we move to real data?
+
+[IMAGE OF POINT CLOUD]
+
+---
+
+Try to draw the Reeb graph of this
+
+each point is an isolated point, so we have no connected components.
+
+each level set is disconnected from the rest, so it's not meaningful to string them together.
 
 ---
 
@@ -250,8 +268,6 @@ layout: true
   * clusters instead of connected components.
   * represent by a simplicial complex.
 
-
-  $$\sum a_n $$
 ---
 
 Is Mapper more?
@@ -260,7 +276,6 @@ Is Mapper more?
   * cover of codomain
   * simplicial complex
   * more than just a one dimensional range
-
 
 
 name: inverse
