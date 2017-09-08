@@ -165,16 +165,15 @@ code {
 
 .left-half {
   color: #777;
-  width: 50%;
-  height: 92%;
+  width: 45%;
   float: left;
+  padding-top: 3em;
 }
 
-
 .right-half {
-  width: 50%;
+  width: 45%;
   float: right;
-  padding-top: 1em;
+  padding-top: 3em;
 }
 
 

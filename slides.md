@@ -263,7 +263,7 @@ What happens when we move to real data?
 
 Try to draw the Reeb graph of this
 
-<div id='scatter-plot'>
+<div class='scatter-plot'>
   <!-- /the chart goes here -->
 </div>
 
@@ -272,20 +272,54 @@ Try to draw the Reeb graph of this
 
 ---
 .left-half[
-<div id='scatter-plot'>
+<div class='scatter-plot'>
   <!-- /the chart goes here -->
 </div>
 ]
 .right-half[
-* Each point is an isolated point, so we have no connected components.
+* Each point is an isolated point
+]
 
-* Each level set is disconnected from the rest, so it's not meaningful to string them together.
+---
+.left-half[
+<div class='scatter-plot', id='connected_components'>
+  <!-- /the chart goes here -->
+</div>
+]
+.right-half[
+* Each point is an isolated point
 
-
+  - so we have no connected components.
 
 ]
 
+---
+.left-half[
+<div class='scatter-plot' id='level_sets'>
+  <!-- /the chart goes here -->
+</div>
+]
+.right-half[
+* Each point is an isolated point
 
+  - so we have no connected components.
+  
+* Each level set is disconnected from the rest
+]
+
+---
+.left-half[
+<div class='scatter-plot'>
+  <!-- /the chart goes here -->
+</div>
+]
+.right-half[
+* Each point is an isolated point
+  - so we have no connected components.
+
+* Each level set is disconnected from the rest
+  - so it's not meaningful to string them together.
+]
 
 ---
 layout: false
@@ -309,16 +343,11 @@ layout: true
 
 Instead of building mapper up from reeb graph, start from the nerve and build mapper from there, while pointing to the ideas from reeb graph along the way.
 
-
-
 Define nerve in 2 slides,
 then build mapper from scratch
  * as intervals (like level sets)
  * with partial clusters (like connected components)
  * taking the nerve of the clusters (like collapsing components together and stringing it together)
-
-
-
 
 ---
 
