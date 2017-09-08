@@ -169,6 +169,23 @@ code {
 }
 
 
+/*  Columns split in half */
+
+.left-half {
+  color: #777;
+  width: 50%;
+  height: 92%;
+  float: left;
+}
+
+
+.right-half {
+  width: 50%;
+  float: right;
+  padding-top: 1em;
+}
+
+
 /* Two-column layout */
 
 .left-column {
@@ -177,6 +194,7 @@ code {
   height: 92%;
   float: left;
 }
+
 
 .left-column h2:last-of-type, .left-column h3:last-child {
   color: #000;

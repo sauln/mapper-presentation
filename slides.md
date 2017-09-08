@@ -15,39 +15,6 @@ layout: true
 
 ---
 
-
-.left-column[
-  ## Big data
-
-]
-.right-column[
-How big?
-]
-
-
----
-
-.left-column[
-  ## Big data
-### - hype train
-]
-.right-column[
-Sooo much hype.. but it's really so big
-]
-
----
-
-.left-column[
-  ## Big data
-### - hype train
-### - Moore's Law
-]
-.right-column[
-Processing power for computers will double every two years.
-]
-
----
-
 .left-column[
   ## Big data
 ### - hype train
@@ -55,6 +22,10 @@ Processing power for computers will double every two years.
 ### - Now what?
 ]
 .right-column[
+Sooo much hype.. but it's really so big
+
+Processing power for computers will double every two years.
+
 LOTS of data and LOTS of processing power... two essential ingredients, no recipe.
 ]
 
@@ -71,7 +42,7 @@ LOTS of data and LOTS of processing power... two essential ingredients, no recip
 .right-column[
 
 
-<img src="coffeetodonut.jpg" alt="some_text" style="width:500px;height:250px;">
+<img src="images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
 
 .footnote[.red.bold[\*]https://www.nga.gov/content/ngaweb/features/the-serial-impulse/bruce-nauman.html]
 
@@ -99,19 +70,25 @@ Topology is useful because
 The data is  sampled from an underlying shape that we want to figure out!
 ---
 
-layout: false
-
-pretty pictures
-
-[HERE WE NEED PICTURES THAT SHOW HOW DATASETS CAN BE REPRESENTED USING THE MAPPER ALGORITHM]
-
+layout: true
+class: center
+# Pretty Pictures
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
 ---
+<img src="images/pretty_mapper_1.jpeg" alt="some_text" style="width:700px;height:500px;">
 
+---
+<img src="images/pretty_mapper_2.jpeg" alt="some_text" style="width:700px;height:500px;">
+
+---
+<img src="images/pretty_mapper_3.jpeg" alt="some_text" style="width:700px;height:500px;">
+
+---
+layout: false
 class: center, middle
 
-# From *Reeb graph* to Mapper
+# From **Reeb graph** to Mapper
 
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
@@ -170,80 +147,14 @@ Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\)
 .left-column[
   ## A function
   ## A relation
-  ## A Reeb graph
+  ### - Connected
+
 ]
 .right-column[
 
-The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
-]
 
----
-
-layout: false
-class: center, middle
-# Duh
-
-<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
-
----
-
-class: center, middle
-# (Not) Duh
-
-<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
-
---
-
-Let's break this down
----
-
-layout: true
-
-# Reeb graph
-<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
-
----
-
-.left-column[
-  ## A function
-  ## A relation
-  ## A Reeb graph
-]
-.right-column[
-Studies a topological space through a function that maps the space to the real line.
-
-$$ f: X \to \mathbb{R} $$
-
-Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is *connected* to \\(f(b)\\) within the same *level set*.
-
-]
-
----
-
-.left-column[
-  ## Level set
-]
-.right-column[
-Say we have a function \\(f:X \to \mathbb{R}\\) from
-
-the *level set* at each \\(a \in \mathbb{R}\\) is defined as
-$$\\{ x \in X \mid f(x) = a \\}$$
-
-]
-
-???
-* a function from our object to the real line, maybe it's defined as height
-* all the pieces that are at the same height
-* these level sets are in the domain!
-
-
----
-.left-column[
-  ## Level set
-  ## Connected components
-]
-.right-column[
-Let \\(\sim\\) be a relation on \\(X\\) such that for \\(a, b\in X\\), \\(a\sim b\\) if they are in the same connected component of a level set.
+Two points are path **connected** if you can draw a line from one to the other without leaving the space.
+<img src="images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
 
 
 ]
@@ -256,42 +167,131 @@ Let \\(\sim\\) be a relation on \\(X\\) such that for \\(a, b\in X\\), \\(a\sim 
 ---
 
 .left-column[
-  ## Level set
-  ## Connected components
-  ## Reeb graph
+  ## A function
+  ## A relation
+  ### - Connected Components
+  ### - Level Sets
+
 ]
 .right-column[
 
+Say we have a function \\(f:X \to \mathbb{R}\\) from
+
+the **level set** at each \\(a \in \mathbb{R}\\) is defined as
+$$\\{ x \in X \mid f(x) = a \\}$$
+<img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
 
 ]
 
 ???
-So the Reeb graph is what we get when we collapse all the connected components of each level set into one point and then string them all together.
+* a function from our object to the real line, maybe it's defined as height
+* all the pieces that are at the same height
+* these level sets are in the domain!
+
+
 
 ---
 
+.left-column[
+  ## A function
+  ## A relation
+  ### - Connected Components
+  ### - Level Sets
+  ## A Reeb graph
+]
+.right-column[
+
+The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
+
+<img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
+
+]
+
+???
+
+which is just a fancy way of saying "collapse connected components of level sets together"
+---
+
+layout: true
+class: center, middle
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+---
+
+<img src="images/reebmultitorus.gif" alt="some_text" style="width:700px;height:500px;">
+---
+
+<img src="images/reebtorus.jpeg" alt="some_text" style="width:700px;height:500px;">
+
+---
+
+<img src="images/reebmultitorus.jpeg" alt="some_text" style="width:700px;height:500px;">
+---
+
+<img src="images/balarina.png" alt="some_text" style="width:700px;height:500px;">
+
+
+---
+
+layout: true
+
+# Reeb graph
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+---
+
+.left-column[
+  ## A function
+  ## A relation
+  ## A Reeb graph
+  ## Point Cloud?
+]
+.right-column[
+
 What happens when we move to real data?
+
+]
+---
+
+.left-column[
+  ## A function
+  ## A relation
+  ## A Reeb graph
+  ## Point Cloud?
+]
+.right-column[
+
+Try to draw the Reeb graph of this
 
 <div id='scatter-plot'>
   <!-- /the chart goes here -->
 </div>
 
+]
 
-Try to draw the Reeb graph of this
 
+---
+.left-half[
+<div id='scatter-plot'>
+  <!-- /the chart goes here -->
+</div>
+]
+.right-half[
 * Each point is an isolated point, so we have no connected components.
 
 * Each level set is disconnected from the rest, so it's not meaningful to string them together.
 
-<div id='scatter-plot'>
-  <!-- /the chart goes here -->
-</div>
+
+
+]
+
+
 
 ---
-
+layout: false
 class: center, middle
 
-# From Reeb graph to *Mapper*
+# From Reeb graph to **Mapper**
 
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
@@ -307,15 +307,92 @@ layout: true
 
 ---
 
+Instead of building mapper up from reeb graph, start from the nerve and build mapper from there, while pointing to the ideas from reeb graph along the way.
+
+
+
+Define nerve in 2 slides,
+then build mapper from scratch
+ * as intervals (like level sets)
+ * with partial clusters (like connected components)
+ * taking the nerve of the clusters (like collapsing components together and stringing it together)
+
+
+
+
+---
+
+
+.left-column[
+## Nerve
+### - Open cover
+
+]
+.right-column[
+
+
+<img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
+.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+]
+
+---
+
+
+.left-column[
+## Nerve
+### - Open cover
+### - Add vertices
+
+]
+.right-column[
+
+<img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
+.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+
+]
+
+---
+
+.left-column[
+## Nerve
+### - Open cover
+### - Add vertices
+### - Add simplices
+]
+.right-column[
+<img src="images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
+.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+
+]
+
+---
+
+.left-column[
+## Nerve
+### - Open cover
+### - Add vertices
+### - Add simplices
+]
+.right-column[
+<img src="images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
+
+.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+
+]
+
+---
+
 .left-column[
   ## Intervals
 ]
 .right-column[
 
-Instead of level sets, look at overlapping intervals.
+Instead of level sets,  look at overlapping intervals.
 
-
+This gives us a cover
 ]
+
+
 ---
 
 
@@ -326,6 +403,9 @@ Instead of level sets, look at overlapping intervals.
 .right-column[
 
 Instead of connected components, look at clusters within intervals
+
+<img src="images/clusters.gif" alt="some_text" style="width:550px;height:350px;">
+--
 
 ]
 
@@ -340,44 +420,15 @@ Instead of connected components, look at clusters within intervals
 .right-column[
 
 String them all together with a simplicial complex.
+ - Each cluster is a vertex
+ - If two clusters share points in common, connect them with a simplex.
 
+Note: clusters will only share points if they are in adjacent intervals.
 ]
 
-
----
-
-
-.left-column[
-  ## A function
-  ## A cover
-  ## A partial clustering
-  ## A nerve
-]
-.right-column[
-Take a function just like the Reeb graph
-
-Define a cover of the range of this function
-
-Run partial clustering over the cover
-
-
-
-
-]
-
-
-
-Is Mapper more?
-
-* woah now we have totally new things to talk about...
-  * cover of codomain
-  * simplicial complex
-  * more than just a one dimensional range
 
 ---
 name: last-page
-template: inverse
 
-## That's all folks (for now)!
 
-Slideshow created using [remark](http://github.com/gnab/remark).
+That's it
