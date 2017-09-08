@@ -8,6 +8,8 @@ body {
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
   font-weight: normal;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -32,18 +34,8 @@ h1, h2, h3 {
   backgound-color: #000000;
 }
 
-remarkConfig : highlightStyle: monokai highlightLanguage: remark highlightLines: true css: | @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
-@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-body {
-  font-family: 'Droid Serif';
-}
+/*remarkConfig : highlightStyle: monokai highlightLanguage: remark highlightLines: true css: | @import url(https://fonts.googleapis.com/css?family=Droid+Serif);*/
 
-h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
-  font-weight: 400;
-  margin-bottom: 0;
-}
 
 .remark-slide-content h1 {
   font-size: 3em;
