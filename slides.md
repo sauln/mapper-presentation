@@ -15,6 +15,7 @@ layout: true
 
 ---
 
+
 .left-column[
   ## Big data
 
@@ -22,6 +23,8 @@ layout: true
 .right-column[
 How big?
 ]
+
+
 
 ---
 
@@ -90,9 +93,8 @@ how are they supposed to make sense of a whole bunch of data?!
 ]
 .right-column[
 * assume data has shape and that the shape is important
-  * or is sampled from an underlying shape that we want to figure out! 
+  * or is sampled from an underlying shape that we want to figure out!
 * use local information to describe global shape
-* pretty pictures
 
 ]
 
@@ -102,6 +104,12 @@ how are they supposed to make sense of a whole bunch of data?!
 layout: false
 
 pretty pictures
+
+[HERE WE NEED PICTURES THAT SHOW HOW DATASETS CAN BE REPRESENTED USING THE MAPPER ALGORITHM]
+
+
+
+
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
 
@@ -172,7 +180,6 @@ Then the Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotie
 
 ---
 
-
 # Duh
 
 ---
@@ -208,7 +215,7 @@ Say we have a function \\(f:X \to \mathbb{R}\\) from
 (a function from our object to the real line, maybe it's defined as height)
 
 the *level set* at each \\(a \in \mathbb{R}\\) is defined as
-$$\{ x \in X \mid f(x) = a \}$$
+$$\\{ x \in X \mid f(x) = a \\}$$
 
 (all the pieces that are at the same height)
 
@@ -241,7 +248,9 @@ Let \\(\sim\\) be a relation on \\(X\\) such that for \\(a, b\in X\\), \\(a\sim 
 
 What happens when we move to real data?
 
-[IMAGE OF POINT CLOUD]
+<div id='scatter-plot'>
+  <!-- /the chart goes here -->
+</div>
 
 ---
 
@@ -267,6 +276,10 @@ layout: true
     * intervals give at least some data points, overlapping so we know how to stitch them together
   * clusters instead of connected components.
   * represent by a simplicial complex.
+
+
+---
+
 
 ---
 
