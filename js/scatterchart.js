@@ -28,7 +28,7 @@ d3.json("../data/torus.json", function(data) {
     })
   ]).range([height, 0]);
 
-  var chart = d3.select('#scatter-plot').append('svg:svg').attr('width', width + margin.right + margin.left).attr('height', height + margin.top + margin.bottom).attr('class', 'chart')
+  var chart = d3.selectAll('#scatter-plot').append('svg:svg').attr('width', width + margin.right + margin.left).attr('height', height + margin.top + margin.bottom).attr('class', 'chart')
 
   var main = chart.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')').attr('width', width).attr('height', height).attr('class', 'main')
 
