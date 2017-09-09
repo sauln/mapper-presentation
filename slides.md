@@ -303,7 +303,7 @@ Try to draw the Reeb graph of this
 * Each point is an isolated point
 
   - so we have no connected components.
-  
+
 * Each level set is disconnected from the rest
 ]
 
@@ -410,15 +410,31 @@ then build mapper from scratch
 ]
 
 ---
+.left-column[
+
+]
+.right-column[
+<div class='scatter-plot'>
+  <!-- /the chart goes here -->
+</div>
+
+]
+
+
+
+---
+
 
 .left-column[
-  ## Intervals
+  ## Overlapping Intervals
 ]
 .right-column[
 
-Instead of level sets,  look at overlapping intervals.
 
-This gives us a cover
+<div class='scatter-plot intervals'>
+  <!-- /the chart goes here -->
+</div>
+
 ]
 
 
@@ -426,15 +442,30 @@ This gives us a cover
 
 
 .left-column[
-  ## Intervals
-  ## Clusters
+  ## Overlapping Intervals
+  ## Partial Clustering
 ]
+
 .right-column[
 
-Instead of connected components, look at clusters within intervals
+<div class='scatter-plot intervals red'>
+  <!-- /the chart goes here -->
+</div>
 
-<img src="images/clusters.gif" alt="some_text" style="width:550px;height:350px;">
---
+]
+
+---
+
+.left-column[
+  ## Overlapping Intervals
+  ## Partial Clustering
+]
+
+.right-column[
+
+<div class='scatter-plot intervals red green'>
+  <!-- /the chart goes here -->
+</div>
 
 ]
 
