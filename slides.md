@@ -12,22 +12,37 @@ layout: true
 # Motivation
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
+---
+
+.left-column[
+## Big data
+]
+.right-column[
+
+<img src="images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
+
+]
 
 ---
 
 .left-column[
-  ## Big data
-### - hype train
-### - Moore's Law
-### - Now what?
+## Big data
+## Moore's Law
+
 ]
 .right-column[
-Sooo much hype.. but it's really so big
+
+<img src="images/oldComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+
+<img src="images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+
+]
+
+???
 
 Processing power for computers will double every two years.
 
 LOTS of data and LOTS of processing power... two essential ingredients, no recipe.
-]
 
 ---
 
@@ -62,6 +77,7 @@ how are they supposed to make sense of a whole bunch of data?!
 Topology is useful because
 
 * We can assume data has shape and that the shape is important.
+
 * Use local information to describe global shape.
 
 ]
@@ -79,10 +95,14 @@ class: center
 <img src="images/pretty_mapper_1.jpeg" alt="some_text" style="width:700px;height:500px;">
 
 ---
+<img src="images/Clu_z60.jpg" alt="some_text" style="width:700px;height:500px;">
+
+
+---
 <img src="images/pretty_mapper_2.jpeg" alt="some_text" style="width:700px;height:500px;">
 
 ---
-<img src="images/pretty_mapper_3.jpeg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/persistentHomology.jpg" alt="some_text" style="width:700px;height:500px;">
 
 ---
 layout: false
@@ -108,7 +128,6 @@ layout: true
 ---
 
 .left-column[
-  ## What
 ]
 .right-column[
 Studies a topological space through a real valued function on that space.
@@ -169,15 +188,13 @@ Two points are path **connected** if you can draw a line from one to the other w
 .left-column[
   ## A function
   ## A relation
-  ### - Connected Components
+  ### - Connected
   ### - Level Sets
 
 ]
 .right-column[
 
-Say we have a function \\(f:X \to \mathbb{R}\\) from
-
-the **level set** at each \\(a \in \mathbb{R}\\) is defined as
+The **level set** at each \\(a \in \mathbb{R}\\) is the set
 $$\\{ x \in X \mid f(x) = a \\}$$
 <img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
 
@@ -193,11 +210,11 @@ $$\\{ x \in X \mid f(x) = a \\}$$
 ---
 
 .left-column[
-  ## A function
-  ## A relation
-  ### - Connected Components
-  ### - Level Sets
-  ## A Reeb graph
+## A function
+## A relation
+### - Connected
+### - Level Sets
+## A Reeb graph
 ]
 .right-column[
 
@@ -241,10 +258,10 @@ layout: true
 ---
 
 .left-column[
-  ## A function
-  ## A relation
-  ## A Reeb graph
-  ## Point Cloud?
+## A function
+## A relation
+## A Reeb graph
+## Point Cloud?
 ]
 .right-column[
 
@@ -254,10 +271,10 @@ What happens when we move to real data?
 ---
 
 .left-column[
-  ## A function
-  ## A relation
-  ## A Reeb graph
-  ## Point Cloud?
+## A function
+## A relation
+## A Reeb graph
+## Point Cloud?
 ]
 .right-column[
 
@@ -333,25 +350,62 @@ class: center, middle
 
 Let's look at the discrete counterpart of the Reeb graph
 
+
+
 ---
 
 layout: true
-# Mapper
+# Nerve
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
 
 
 ---
 
 
 .left-column[
-## Nerve
-### - Open cover
+
+]
+.right-column[
+
+Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
+
+
+$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
+
+]
+
+---
+
+.left-column[
+
+]
+.right-column[
+
+Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
+
+$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
+
+### This is an abstract simplicial complex!
+
+]
+
+
+
+
+---
+
+
+
+.left-column[
+## Open cover
 
 ]
 .right-column[
 
 
 <img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
+
 .footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
 ]
 
@@ -359,14 +413,14 @@ layout: true
 
 
 .left-column[
-## Nerve
-### - Open cover
-### - Add vertices
+## Open cover
+## Add vertices
 
 ]
 .right-column[
 
 <img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
+
 .footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
 
 ]
@@ -374,13 +428,14 @@ layout: true
 ---
 
 .left-column[
-## Nerve
-### - Open cover
-### - Add vertices
-### - Add simplices
+
+## Open cover
+## Add vertices
+## Add simplices
 ]
 .right-column[
 <img src="images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
+
 .footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
 
 ]
@@ -388,10 +443,10 @@ layout: true
 ---
 
 .left-column[
-## Nerve
-### - Open cover
-### - Add vertices
-### - Add simplices
+
+## Open cover
+## Add vertices
+## Add simplices
 ]
 .right-column[
 <img src="images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
@@ -401,6 +456,16 @@ layout: true
 ]
 
 ---
+
+layout: true
+# Mapper
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+
+
+
+---
+
 .left-column[
 
 ]
@@ -410,7 +475,6 @@ layout: true
 </div>
 
 ]
-
 
 
 ---
@@ -467,15 +531,15 @@ layout: true
 .left-column[
 ## Overlapping Intervals
 ## Partial Clustering
-## Simplicial Complex
+## Nerve of Clusters
 ]
 .right-column[
 
-String them all together with a simplicial complex.
+Build nerve from partial clusters!
  - Each cluster is a vertex
- - If two clusters share points in common, connect them with a simplex.
+ - Clusters overlap if they share points in common
 
-Note: clusters will only share points if they are in adjacent intervals.
+*Note:* clusters will only share points if they are in different intervals.
 ]
 
 
@@ -524,14 +588,29 @@ Note: clusters will only share points if they are in adjacent intervals.
 <!-- simplicial complex goes here -->
 </div>
 
+]
+
+---
+
+.left-half[
+<div class='scatter-plot'>
+  <!-- /the chart goes here -->
+</div>
+]
+
+.right-half[
+
+<div class="complex edges">
+<!-- simplicial complex goes here -->
+</div>
 
 ]
 
 
-
-
 ---
+layout: false
 name: last-page
 
+class: center, middle
 
-That's it
+# Thank you
