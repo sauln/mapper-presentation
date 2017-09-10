@@ -276,14 +276,48 @@ d3.json("../data/torus.json", function(data) {
     gComplex.selectAll("scatter-dots").data(vertices).enter().append("svg:circle")
       .attr("cx", function(d) { return x(d.x); })
       .attr("cy", function(d) { return y(d.y); })
-      .attr("r", 4)
+      .attr("r", 7)
       .attr("fill", function(d) { return d.color; })
       ;
 
+      /// map our random points to edges
+    var edges = [
+      [circleRedData[0], circleGreenData[0]],
+      [circleRedData[0], circleGreenData[1]],
+      [circleRedData[0], circleGreenData[2]],
+      [circleRedData[1], circleGreenData[1]],
+      [circleRedData[1], circleGreenData[3]],
+      [circleRedData[2], circleGreenData[2]],
+      [circleRedData[2], circleGreenData[4]],
+
+      [circleRedData[3], circleGreenData[3]],
+      [circleRedData[3], circleGreenData[5]],
+      [circleRedData[4], circleGreenData[4]],
+
+      [circleRedData[4], circleGreenData[6]],
+      [circleRedData[5], circleGreenData[5]],
+      [circleRedData[5], circleGreenData[8]],
+      [circleRedData[6], circleGreenData[6]],
+
+      [circleRedData[6], circleGreenData[7]],
+      [circleRedData[7], circleGreenData[7]],
+      [circleRedData[7], circleGreenData[8]]
+    ]
 
 
+    var edgeFunction = d3.svg.line()
+      .x(function(d) { return x(d.x); })
+      .y(function(d) { return y(d.y); })
+      .interpolate("linear");
 
+    var edgesG = d3.selectAll('.edges').select('svg').select('g')
 
+    edgesG.selectAll("edge").data(edges).enter().append("path")
+      .attr("d", edgeFunction)
+      .attr("stroke", "steelblue")
+      .attr("stroke-width", 5)
+      .attr("stroke-opacity", 0.7)
+      .attr("fill", "none");
 
 
 

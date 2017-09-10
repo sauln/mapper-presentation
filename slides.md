@@ -460,6 +460,25 @@ layout: true
 
 ]
 
+
+---
+
+
+.left-column[
+## Overlapping Intervals
+## Partial Clustering
+## Simplicial Complex
+]
+.right-column[
+
+String them all together with a simplicial complex.
+ - Each cluster is a vertex
+ - If two clusters share points in common, connect them with a simplex.
+
+Note: clusters will only share points if they are in adjacent intervals.
+]
+
+
 ---
 
 .left-half[
@@ -472,6 +491,7 @@ layout: true
 
 
 ]
+
 
 ---
 
@@ -508,25 +528,6 @@ layout: true
 ]
 
 
----
-
-
-
-
-
-.left-column[
-  ## Intervals
-  ## Clusters
-  ## Simplicial Complex
-]
-.right-column[
-
-String them all together with a simplicial complex.
- - Each cluster is a vertex
- - If two clusters share points in common, connect them with a simplex.
-
-Note: clusters will only share points if they are in adjacent intervals.
-]
 
 
 ---
