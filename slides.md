@@ -339,15 +339,6 @@ layout: true
 # Mapper
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
----
-
-Instead of building mapper up from reeb graph, start from the nerve and build mapper from there, while pointing to the ideas from reeb graph along the way.
-
-Define nerve in 2 slides,
-then build mapper from scratch
- * as intervals (like level sets)
- * with partial clusters (like connected components)
- * taking the nerve of the clusters (like collapsing components together and stringing it together)
 
 ---
 
@@ -470,6 +461,57 @@ then build mapper from scratch
 ]
 
 ---
+
+.left-half[
+<div class='scatter-plot intervals red green'>
+  <!-- /the chart goes here -->
+</div>
+]
+
+.right-half[
+
+
+]
+
+---
+
+.left-half[
+<div class='scatter-plot intervals red green'>
+  <!-- /the chart goes here -->
+</div>
+]
+
+.right-half[
+
+<div class="complex">
+<!-- simplicial complex goes here -->
+</div>
+
+
+]
+
+---
+
+.left-half[
+<div class='scatter-plot intervals red green'>
+  <!-- /the chart goes here -->
+</div>
+]
+
+.right-half[
+
+<div class="complex edges">
+<!-- simplicial complex goes here -->
+</div>
+
+
+]
+
+
+---
+
+
+
 
 
 .left-column[

@@ -138,65 +138,149 @@ d3.json("../data/torus.json", function(data) {
 
 
     var circleRedData = [
-        [12.4, 0.9],
-        [-12.4, 0.9]
+      {
+        "x": 0,
+        "y": -11,
+        "rx": 100,
+        "color": "red"
+      },
+      {
+        "x": 10.4,
+        "y": -5,
+        "color": "red"
+      },
+      {
+        "x": -10.4,
+        "y": -5,
+        "color": "red"
+      },
+
+        {
+          "x": 12.4,
+          "y": 0.9,
+          "color": "red"
+        },
+        {
+          "x": -12.4,
+          "y": 0.9,
+          "color": "red"
+        },
+        {
+          "x": 10.5,
+          "y": 6.5,
+          "color": "red"
+        },
+        {
+          "x": -10.5,
+          "y": 6.5,
+          "color": "red"
+        },
+        {
+          "x": 0,
+          "y": 12.7,
+          "rx": 100,
+          "color": "red"
+        }
     ]
     var circleGreenData = [
-        [11.4, 3.8],
-        [-11.4, 3.8]
+      {
+        "x": 0,
+        "y": -13.5,
+        "rx": 80,
+        "ry": 10,
+        "color": "green"
+      },
+      {
+        "x":8.4,
+        "y": -8.5,
+        "rx": 40,
+        "color": "green"
+      },
+      {
+        "x": -8.4,
+        "y": -8.5,
+        "rx": 40,
+        "color": "green"
+      },
+
+      {
+        "x":11.4,
+        "y": -2,
+        "color": "green"
+      },
+      {
+        "x": -11.4,
+        "y": -2,
+        "color": "green"
+      },
+        {
+          "x":11.4,
+          "y": 3.8,
+          "color": "green"
+        },
+        {
+          "x": -11.4,
+          "y": 3.8,
+          "color": "green"
+        },
+        {
+          "x": -7.4,
+          "y": 10,
+          "rx": 60,
+          "color": "green"
+        },
+        {
+          "x": 7.4,
+          "y": 10,
+          "rx": 60,
+          "color": "green"
+        }
+
+
     ]
 
     function drawColoredClusters(data, color){
       console.log("WE run the cluster drawing function")
       var clusters = d3.selectAll('.'+color).select('svg').select('g')
 
-      clusters.selectAll("clusterOutlines").data(data).enter().append("circle")
-          .attr("cx", function(d) { return x(d[0]); })
-          .attr("cy", function(d) { return y(d[1]); })
-          .attr("r", 29)
-          .attr("stroke",  color)
+      clusters.selectAll("clusterOutlines").data(data).enter().append("ellipse")
+          .attr("cx", function(d) { return x(d.x); })
+          .attr("cy", function(d) { return y(d.y); })
+          .attr("rx", function(d) { return d.rx ? d.rx : 30})
+          .attr("ry", function(d) { return d.ry ? d.ry : 25})
+          .attr("stroke",  function(d) {return d.color; })
           .attr("stroke-width", "3")
           .attr("fill", "none")
     }
 
     drawColoredClusters(circleRedData, "red")
     drawColoredClusters(circleGreenData, "green")
-    //
-    // var clusters = d3.selectAll('.red').select('svg').select('g')
-    //
-    // clusters.selectAll("clusterOutlines").data(circleRedData).enter().append("circle")
-    //     .attr("cx", function(d) { return x(d[0]); })
-    //     .attr("cy", function(d) { return y(d[1]); })
-    //     .attr("r", 30)
-    //     .attr("stroke", "red")
-    //     .attr("stroke-width", "3")
-    //     .attr("fill", "none")
-    //
 
-      //
-      // clusters = d3.selectAll('.green').select('svg').select('g')
-      //
-      // clusters.selectAll("clusterOutlines").data(circleGreenData).enter().append("circle")
-      //     .attr("cx", function(d) { return x(d[0]); })
-      //     .attr("cy", function(d) { return y(d[1]); })
-      //     .attr("r", 30)
-      //     .attr("stroke", function(d) { "green" })
-      //     .attr("stroke-width", "3")
-      //     .attr("fill", "none")
-      //
+    var vertices = circleGreenData.concat(circleRedData)
+    console.log("The vertices for the complex: " + JSON.stringify(vertices))
+
+    var complex = d3.selectAll('.complex')
+      .append('svg:svg')
+      .attr('width', width + margin.right + margin.left)
+      .attr('height', height + margin.top + margin.bottom)
+      .attr('class', 'chart')
+
+    var mainComplex = complex.append('g')
+      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
+      .attr('width', width)
+      .attr('height', height)
+      .attr('class', 'main');
+
+    var gComplex = mainComplex.append("svg:g");
+
+    gComplex.selectAll("scatter-dots").data(vertices).enter().append("svg:circle")
+      .attr("cx", function(d) { return x(d.x); })
+      .attr("cy", function(d) { return y(d.y); })
+      .attr("r", 4)
+      .attr("fill", function(d) { return d.color; })
+      ;
 
 
-        // .style("fill", "none")
-        // .style("stroke-width", 5)
-        // .style("stroke", "red");
-    //
-    //
-    // .append("circle")
-    //   .attr("cx", function (d) { return x(d[0]) })
-    //   .attr("cy", function (d) { return y(d[1]) })
-    //   .attr("r",  function (d) { return d[2] })
-    //   .style("stroke", "red")
-    //   .style("fill", "none")
 
 
 
