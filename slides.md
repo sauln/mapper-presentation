@@ -607,6 +607,13 @@ Build nerve from partial clusters!
 ]
 
 
+
+---
+
+
+<img src="images/mapper_rotations.png" alt="some_text" style="width:550px;height:350px;">
+
+
 ---
 layout: false
 name: last-page
