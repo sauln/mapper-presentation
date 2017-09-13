@@ -160,6 +160,7 @@ The data is  sampled from an underlying shape that we want to figure out!
 
 layout: true
 class: center
+
 # Pretty Pictures
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
@@ -175,6 +176,7 @@ complex data using topology, 2013]
 
 <img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
+
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
 
@@ -183,6 +185,7 @@ complex data using topology, 2013]
 <img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
+
 
 ---
 layout: false
@@ -429,6 +432,8 @@ class: middle, center
 ## Mapper
 
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
 
 
 ---
@@ -441,6 +446,10 @@ layout: false
 
 
 .footnote[Photo from [TreverGoodchild Wikipedia](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
+
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
 
 
 ---
@@ -709,9 +718,15 @@ complex data using topology, 2013]
 
 <img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
+.footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
+
+
 ---
 
 <img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
 
 
 ???
@@ -742,6 +757,9 @@ Twitter: [@\_ropthe\_](https://twitter.com/_ropthe_)
 
 Github: [sauln](https://github.com/sauln/)
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+
 
 ---
 
@@ -755,3 +773,5 @@ G. Singh, F. Memoli, and G. Carlsson. Topological Methods for the analysis of hi
 Lum et al. Extracting insights from the shape of complex data using Topology, *Nature Scientific Reports*, 2013
 
 Torres et al, Tracking Resilience to Infections by Mapping Disease Space, *PLOS Biology*, 2016
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
