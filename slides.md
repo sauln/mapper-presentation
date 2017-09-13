@@ -36,6 +36,11 @@ layout: true
 
 <img src="images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
 
+
+.footnote[Photos thanks to [ChillOutPoint.com](http://www.chilloutpoint.com/featured/old-photos-of-the-first-generation-of-computers.html) and
+[EBuyer.com](http://www.ebuyer.com/blog/2014/04/introducing-kids-to-technology/)]
+
+
 ]
 
 ???
@@ -59,7 +64,7 @@ LOTS of data and LOTS of processing power... two essential ingredients, no recip
 
 <img src="images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
 
-.footnote[.red.bold[\*]https://www.nga.gov/content/ngaweb/features/the-serial-impulse/bruce-nauman.html]
+.footnote[Bruce Nauman, Fingers and Holes, 1994]
 
 ]
 
@@ -68,6 +73,33 @@ A topologist can't even tell the difference between their coffee mug and their d
 how are they supposed to make sense of a whole bunch of data?!
 
 ---
+
+.left-column[
+  ## Topology
+  ### - How?
+]
+.right-column[
+
+#  \\( \mathcal{A}  \sim A\\)
+#  \\( \mathcal{B}  \sim B\\)
+#  \\( \mathcal{C}  \sim C\\)
+
+]
+
+???
+
+
+read or recognize characters
+
+topology is a natural way to characterize classes of letters,
+
+it can distinguish loops and allows for deformations
+
+
+
+
+---
+
 
 .left-column[
   ## Topology
@@ -84,6 +116,7 @@ Topology is useful because
 
 ???
 The data is  sampled from an underlying shape that we want to figure out!
+
 ---
 
 layout: true
@@ -92,17 +125,29 @@ class: center
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
 ---
-<img src="images/pretty_mapper_1.jpeg" alt="some_text" style="width:700px;height:500px;">
+
+<img src="images/breastCancer.jpg" alt="some_text" style="width:700px;height:500px;">
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
+
 
 ---
-<img src="images/Clu_z60.jpg" alt="some_text" style="width:700px;height:500px;">
+
+<img src="images/voting.jpg" alt="some_text" style="width:700px;height:500px;">
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
 
 
 ---
-<img src="images/pretty_mapper_2.jpeg" alt="some_text" style="width:700px;height:500px;">
 
----
-<img src="images/persistentHomology.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:500px;">
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
+
+
 
 ---
 layout: false
@@ -227,6 +272,7 @@ The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient to
 ???
 
 which is just a fancy way of saying "collapse connected components of level sets together"
+
 ---
 
 layout: true
@@ -237,17 +283,16 @@ class: center, middle
 ---
 
 <img src="images/reebmultitorus.gif" alt="some_text" style="width:700px;height:500px;">
----
-
-<img src="images/reebtorus.jpeg" alt="some_text" style="width:700px;height:500px;">
 
 ---
 
 <img src="images/reebmultitorus.jpeg" alt="some_text" style="width:700px;height:500px;">
+
+.footnote[.red.bold[\*]Edelsbrunner and Harer, Computational Topology]
+
 ---
 
 <img src="images/balarina.png" alt="some_text" style="width:700px;height:500px;">
-
 
 ---
 
@@ -406,7 +451,8 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \
 
 <img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
+
 ]
 
 ---
@@ -421,7 +467,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \
 
 <img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
 ]
 
@@ -436,7 +482,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \
 .right-column[
 <img src="images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
 ]
 
@@ -451,7 +497,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \
 .right-column[
 <img src="images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]http://www.dyinglovegrape.com/math/topology_data_1.php]
+.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
 ]
 
@@ -610,8 +656,39 @@ Build nerve from partial clusters!
 
 ---
 
+<img src="images/breastCancer.jpg" alt="some_text" style="width:550px;height:350px;">
+
+---
+
+<img src="images/voting.jpg" alt="some_text" style="width:700px;height:500px;">
+
+---
+
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:500px;">
+
+
+
+---
+
+???
+
+Circle back to detail one case study from before -
+
+talk in more detail of what the mapper shows in the data
+
+This is not the pancea of data analysis,
+
+ it is a great tool you should
+have in your toolbox.
+
+Along with clustering, dimensionality reductions, etc.
+
+
+---
+
 
 <img src="images/mapper_rotations.png" alt="some_text" style="width:550px;height:350px;">
+
 
 
 ---
@@ -621,3 +698,21 @@ name: last-page
 class: center, middle
 
 # Thank you
+
+Email: [nathaniel.saul@wsu.edu](nathaniel.saul@wsu.edu)
+
+Twitter: [@\_ropthe\_](https://twitter.com/_ropthe_)
+
+Github: [sauln](https://github.com/sauln/)
+
+
+---
+
+Bibliography
+
+H. Edelsbrunner, J. Harer, Computational Topology: an introduction, *AMS* 2010
+
+
+G. Singh, F. Memoli, and G. Carlsson. Topological Methods for the analysis of high dimensional data sets and 3D object recognition. *Eurograph. Sympos. Point-Based Graphics* pg 91-100, 2007.
+
+Lum et al. *Extracting insights from the shape of complex data using Topology* Nature Scientific Reports, 2013
