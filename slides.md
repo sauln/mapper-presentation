@@ -2,7 +2,7 @@
 class: center, middle
 
 # From Reeb graph to Mapper
-
+## An Introduction to Topological Data Analysis
 Nathaniel Saul
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
@@ -22,6 +22,44 @@ layout: true
 <img src="images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
 
 ]
+
+
+???
+
+Intro:
+Start out talking about big data, machine learning, the hype machine.
+It's clear that we have tons of data and we have tons of processing power, the question is whether we can pull any useful insights from the data.  
+
+The hype comes from the assumption that this is useful and
+we can learn from this massive data..
+
+Middle:
+need to talk about topological invariants about the letters
+
+talk about how we assume data has an underlying shape and from the data, we can learn the topological invariants of the shape.
+
+talk about how the reeb graph and mapper are a compression of the underlying object that still captures the essential topological information.
+and, we then look features of these objects,
+such as flares and loops
+
+Mention how the reeb graph can be generalized to Rd and the
+mapper could have overlapping 2d rectangles or higher, not just intervals along one dimension
+
+
+
+Synthesis/conclusion
+
+mapper is a great exploratory tool,
+we've seen how it can construct a compressed summary that captures the topological invariants of the space.
+
+imagine you had a very high dimensional object where you couldn't easily look at it and see there is a loop, this construction would be useful then.
+
+It is not a panacea for data analytics, but it is a useful tool for exploratory analysis that should be in your toolbox
+
+
+
+
+
 
 ---
 
