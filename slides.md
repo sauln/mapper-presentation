@@ -26,12 +26,7 @@ layout: true
 
 ???
 
-Intro:
-Start out talking about big data, machine learning, the hype machine.
-It's clear that we have tons of data and we have tons of processing power, the question is whether we can pull any useful insights from the data.  
 
-The hype comes from the assumption that this is useful and
-we can learn from this massive data..
 
 Middle:
 need to talk about topological invariants about the letters
@@ -170,17 +165,11 @@ class: center
 
 ---
 
-<img src="images/breastCancer.jpg" alt="some_text" style="width:700px;height:400px;">
+<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
 
-
----
-
-<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
-
-.footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
 ---
 
@@ -188,6 +177,12 @@ complex data using topology, 2013]
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
+
+---
+
+<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+
+.footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
 ---
 layout: false
@@ -244,6 +239,8 @@ $$ f: X \to \mathbb{R} $$
 
 Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\) within the same level set.
 
+
+
 ]
 
 ---
@@ -259,7 +256,7 @@ Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\)
 
 Two points are path **connected** if you can draw a line from one to the other without leaving the space.
 <img src="images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
-
+.footnote[Photo from [Maths Trek Blog](https://mathstrek.blog/2013/03/07/topology-path-connected-spaces/)]
 
 ]
 
@@ -283,6 +280,8 @@ The **level set** at each \\(a \in \mathbb{R}\\) is the set
 $$\\{ x \in X \mid f(x) = a \\}$$
 <img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
 
+.footnote[Photo from [Level-set method wikipedia](https://en.wikipedia.org/wiki/Level-set_method)]
+
 ]
 
 ???
@@ -305,7 +304,10 @@ $$\\{ x \in X \mid f(x) = a \\}$$
 
 The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
 
-<img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
+
+<img src="images/reebmultitorus.gif" alt="some_text" style="width:500px;height:300px;">
+
+.footnote[Photo from [Silvia Biasotti](http://old.cescg.org/CESCG-2001/SBiasotti/index.html)]
 
 ]
 
@@ -320,19 +322,12 @@ class: center, middle
 
 <div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
----
-
-<img src="images/reebmultitorus.gif" alt="some_text" style="width:700px;height:500px;">
 
 ---
 
-<img src="images/reebmultitorus.jpeg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/reebmultitorus.png" alt="some_text" style="width:700px;height:500px;">
 
-.footnote[.red.bold[\*]Edelsbrunner and Harer, Computational Topology]
-
----
-
-<img src="images/balarina.png" alt="some_text" style="width:700px;height:500px;">
+.footnote[Photo from Edelsbrunner and Harer's Computational Topology]
 
 ---
 
@@ -384,19 +379,6 @@ Try to draw the Reeb graph of this
 
 ---
 .left-half[
-<div class='scatter-plot', id='connected_components'>
-  <!-- /the chart goes here -->
-</div>
-]
-.right-half[
-* Each point is an isolated point
-
-  - so we have no connected components.
-
-]
-
----
-.left-half[
 <div class='scatter-plot' id='level_sets'>
   <!-- /the chart goes here -->
 </div>
@@ -404,24 +386,27 @@ Try to draw the Reeb graph of this
 .right-half[
 * Each point is an isolated point
 
-  - so we have no connected components.
+  - so each level set is disconnected from the rest
 
-* Each level set is disconnected from the rest
 ]
+
+
 
 ---
 .left-half[
-<div class='scatter-plot'>
+<div class='scatter-plot', id='connected_components'>
   <!-- /the chart goes here -->
 </div>
 ]
 .right-half[
 * Each point is an isolated point
-  - so we have no connected components.
 
-* Each level set is disconnected from the rest
-  - so it's not meaningful to string them together.
+  - each level set is disconnected from the rest.
+
+  - each point is its own connected component.
+
 ]
+
 
 ---
 layout: false
@@ -452,10 +437,10 @@ layout: false
 # Simplicial Complex
 
 
-<img src="images/Simplicial_complex_example.svg.png" alt="some_text" style="width:700px;height:400px;">
+<img src="images/Simplicial_complex_example.svg.png" alt="some_text" style="width:650px;height:400px;">
 
 
-.footnote[[Trever Goodchild](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
+.footnote[Photo from [TreverGoodchild Wikipedia](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
 
 
 ---
@@ -496,10 +481,6 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 
 ]
 
-
-
-
-
 ---
 
 
@@ -512,7 +493,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 
 <img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
+.footnote[Photo from James Salvatore, Applying Topology to Data]
 
 ]
 
@@ -528,7 +509,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 
 <img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
 
-.footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
+.footnote[Photo from James Salvatore, Applying Topology to Data]
 
 ]
 
@@ -717,11 +698,20 @@ Build nerve from partial clusters!
 
 ---
 
-<img src="images/disease_small.png" alt="some_text" style="width:550px;height:350px;">
+<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
+
+
 
 ---
 
-<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+
+---
+
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
 
 ???
