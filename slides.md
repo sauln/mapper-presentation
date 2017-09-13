@@ -74,16 +74,21 @@ how are they supposed to make sense of a whole bunch of data?!
 
 ---
 
+
+
 .left-column[
   ## Topology
   ### - How?
 ]
-.right-column[
+.right-column[.center[
+
 
 #  \\( \mathcal{A}  \sim A\\)
-#  \\( \mathcal{B}  \sim B\\)
-#  \\( \mathcal{C}  \sim C\\)
 
+#  \\( \mathcal{B}  \sim B\\)
+
+#  \\( \mathcal{C}  \sim C\\)
+]
 ]
 
 ???
@@ -108,11 +113,12 @@ it can distinguish loops and allows for deformations
 .right-column[
 Topology is useful because
 
-* We can assume data has shape and that the shape is important.
-
-* Use local information to describe global shape.
+* We can assume data has shape and
+* Shape is important.
+* Also ...
 
 ]
+
 
 ???
 The data is  sampled from an underlying shape that we want to figure out!
@@ -126,7 +132,7 @@ class: center
 
 ---
 
-<img src="images/breastCancer.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/breastCancer.jpg" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
@@ -134,20 +140,16 @@ complex data using topology, 2013]
 
 ---
 
-<img src="images/voting.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
-.footnote[Lum et al, Extracting insights from the shape of
-complex data using topology, 2013]
-
+.footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
 ---
 
-<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
-
-
 
 ---
 layout: false
@@ -396,6 +398,27 @@ class: center, middle
 Let's look at the discrete counterpart of the Reeb graph
 
 
+---
+class: middle, center
+
+## Simplicial Complex
+## Nerve
+## Mapper
+
+
+
+
+---
+
+layout: false
+# Simplicial Complex
+
+
+<img src="images/Simplicial_complex_example.svg.png" alt="some_text" style="width:700px;height:400px;">
+
+
+.footnote[[Trever Goodchild](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
+
 
 ---
 
@@ -416,7 +439,7 @@ layout: true
 Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
 
 
-$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
+$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
 
 ]
 
@@ -429,17 +452,17 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \
 
 Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
 
-$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcup_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
+$$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
 
-### This is an abstract simplicial complex!
+### This is a simplicial complex!
 
 ]
 
 
 
 
----
 
+---
 
 
 .left-column[
@@ -656,22 +679,14 @@ Build nerve from partial clusters!
 
 ---
 
-<img src="images/breastCancer.jpg" alt="some_text" style="width:550px;height:350px;">
-
----
-
-<img src="images/voting.jpg" alt="some_text" style="width:700px;height:500px;">
+<img src="images/disease_small.png" alt="some_text" style="width:550px;height:350px;">
 
 ---
 
 <img src="images/basketball.jpg" alt="some_text" style="width:700px;height:500px;">
 
 
-
----
-
 ???
-
 Circle back to detail one case study from before -
 
 talk in more detail of what the mapper shows in the data
@@ -682,12 +697,6 @@ This is not the pancea of data analysis,
 have in your toolbox.
 
 Along with clustering, dimensionality reductions, etc.
-
-
----
-
-
-<img src="images/mapper_rotations.png" alt="some_text" style="width:550px;height:350px;">
 
 
 
@@ -708,11 +717,13 @@ Github: [sauln](https://github.com/sauln/)
 
 ---
 
-Bibliography
+# Bibliography
 
 H. Edelsbrunner, J. Harer, Computational Topology: an introduction, *AMS* 2010
 
 
 G. Singh, F. Memoli, and G. Carlsson. Topological Methods for the analysis of high dimensional data sets and 3D object recognition. *Eurograph. Sympos. Point-Based Graphics* pg 91-100, 2007.
 
-Lum et al. *Extracting insights from the shape of complex data using Topology* Nature Scientific Reports, 2013
+Lum et al. Extracting insights from the shape of complex data using Topology, *Nature Scientific Reports*, 2013
+
+Torres et al, Tracking Resilience to Infections by Mapping Disease Space, *PLOS Biology*, 2016
