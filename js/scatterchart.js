@@ -1,4 +1,4 @@
-d3.json("../data/torus.json", function(data) {
+d3.json("data/torus.json", function(data) {
   console.log(data[0]);
 
   var margin = {
