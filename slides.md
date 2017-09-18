@@ -1,14 +1,30 @@
 
+class: center, middle
+
 # From Reeb graph to Mapper
 ## An Introduction to Topological Data Analysis
 Nathaniel Saul
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
+---
+layout: true
 
 # Motivation
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+---
+
+.left-column[
+## Big data
+]
+.right-column[
+
+<img src="images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
+
+]
 
 
-<img src="../images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
-
+???
 
 
 
@@ -39,37 +55,65 @@ It is not a panacea for data analytics, but it is a useful tool for exploratory 
 
 
 
-<img src="../images/oldComputer.jpg" alt="some_text" style="width:348px;height:196px;">
 
-<img src="../images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+---
+
+.left-column[
+## Big data
+## Moore's Law
+
+]
+.right-column[
+
+<img src="images/oldComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+
+<img src="images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
 
 
 .footnote[Photos thanks to [ChillOutPoint.com](http://www.chilloutpoint.com/featured/old-photos-of-the-first-generation-of-computers.html) and
 [EBuyer.com](http://www.ebuyer.com/blog/2014/04/introducing-kids-to-technology/)]
 
 
+]
+
+???
+
 Processing power for computers will double every two years.
 
 LOTS of data and LOTS of processing power... two essential ingredients, no recipe.
 
+---
+
 ##  TOPOLOGY!
 
+---
+
+.left-column[
   ## Topology
   ### - How?
+]
+.right-column[
 
 
-<img src="../images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
+<img src="images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
 
 .footnote[Bruce Nauman, Fingers and Holes, 1994]
 
+]
+
+???
 A topologist can't even tell the difference between their coffee mug and their donut,
 how are they supposed to make sense of a whole bunch of data?!
 
 ---
 
 
+
+.left-column[
   ## Topology
   ### - How?
+]
+.right-column[.center[
 
 
 #  \\( \mathcal{A}  \sim A\\)
@@ -77,6 +121,10 @@ how are they supposed to make sense of a whole bunch of data?!
 #  \\( \mathcal{B}  \sim B\\)
 
 #  \\( \mathcal{C}  \sim C\\)
+]
+]
+
+???
 
 
 read or recognize characters
@@ -87,52 +135,107 @@ it can distinguish loops and allows for deformations
 
 
 
+
+---
+
+
+.left-column[
+  ## Topology
+  ### - How?
+]
+.right-column[
 Topology is useful because
 
 * We can assume data has shape and
 * Shape is important.
 * Also ...
 
+]
+
+
+???
 The data is  sampled from an underlying shape that we want to figure out!
 
+---
+
+layout: true
+class: center
 
 # Pretty Pictures
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
+---
 
-<img src="../images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
-
-.footnote[Lum et al, Extracting insights from the shape of
-complex data using topology, 2013]
-
-<img src="../images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
-
+<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
 
 
-<img src="../images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+---
+
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
+
+
+.footnote[Lum et al, Extracting insights from the shape of
+complex data using topology, 2013]
+
+---
+
+<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
+
+
+---
+layout: false
+class: center, middle
+
+# From **Reeb graph** to Mapper
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+???
 
 Going to start by describing from topological data analysis that has been used to study and compare shapes...
 
 then I'm going to show you it's discrete counterpart that works on point clouds of data.
 
-# Reeb graph
+---
 
+layout: true
+
+# Reeb graph
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+---
+
+.left-column[
+]
+.right-column[
 Studies a topological space through a real valued function on that space.
 
+]
 
+---
+
+.left-column[
   ## A function
-
+]
+.right-column[
 Studies a topological space through a real valued function on that space.
 
 $$ f: X \to \mathbb{R} $$
 
+]
+---
+
+.left-column[
   ## A function
   ## A relation
 
+]
+.right-column[
 Studies a topological space through a real valued function on that space.
 
 $$ f: X \to \mathbb{R} $$
@@ -141,14 +244,21 @@ Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\)
 
 
 
+]
+
+---
+
+.left-column[
   ## A function
   ## A relation
   ### - Connected
 
+]
+.right-column[
 
 
 Two points are path **connected** if you can draw a line from one to the other without leaving the space.
-<img src="../images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
+<img src="images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
 .footnote[Photo from [Maths Trek Blog](https://mathstrek.blog/2013/03/07/topology-path-connected-spaces/)]
 
 ]
@@ -171,7 +281,7 @@ Two points are path **connected** if you can draw a line from one to the other w
 
 The **level set** at each \\(a \in \mathbb{R}\\) is the set
 $$\\{ x \in X \mid f(x) = a \\}$$
-<img src="../images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
+<img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
 
 .footnote[Photo from [Level-set method wikipedia](https://en.wikipedia.org/wiki/Level-set_method)]
 
@@ -184,45 +294,72 @@ $$\\{ x \in X \mid f(x) = a \\}$$
 
 
 
+---
+
+.left-column[
 ## A function
 ## A relation
 ### - Connected
 ### - Level Sets
 ## A Reeb graph
+]
+.right-column[
 
 The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
 
 
-<img src="../images/reebmultitorus.gif" alt="some_text" style="width:500px;height:300px;">
+<img src="images/reebmultitorus.gif" alt="some_text" style="width:500px;height:300px;">
 
 .footnote[Photo from [Silvia Biasotti](http://old.cescg.org/CESCG-2001/SBiasotti/index.html)]
 
+]
 
+???
 
 which is just a fancy way of saying "collapse connected components of level sets together"
 
+---
+
+layout: true
+class: center, middle
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
 
-<img src="../images/reebmultitorus.png" alt="some_text" style="width:700px;height:500px;">
+---
+
+<img src="images/reebmultitorus.png" alt="some_text" style="width:700px;height:500px;">
 
 .footnote[Photo from Edelsbrunner and Harer's Computational Topology]
 
-# Reeb graph
+---
 
+layout: true
+
+# Reeb graph
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+---
+
+.left-column[
 ## A function
 ## A relation
 ## A Reeb graph
 ## Point Cloud?
+]
+.right-column[
 
 What happens when we move to real data?
 
+]
+---
 
-
+.left-column[
 ## A function
 ## A relation
 ## A Reeb graph
 ## Point Cloud?
-
+]
+.right-column[
 
 Try to draw the Reeb graph of this
 
@@ -230,64 +367,120 @@ Try to draw the Reeb graph of this
   <!-- /the chart goes here -->
 </div>
 
+]
+
+
+---
+.left-half[
 <div class='scatter-plot'>
   <!-- /the chart goes here -->
 </div>
-
+]
+.right-half[
 * Each point is an isolated point
+]
 
-
+---
+.left-half[
 <div class='scatter-plot' id='level_sets'>
   <!-- /the chart goes here -->
 </div>
-
+]
+.right-half[
 * Each point is an isolated point
 
   - so each level set is disconnected from the rest
 
+]
 
+
+
+---
+.left-half[
 <div class='scatter-plot', id='connected_components'>
   <!-- /the chart goes here -->
 </div>
-
+]
+.right-half[
 * Each point is an isolated point
 
   - each level set is disconnected from the rest.
 
   - each point is its own connected component.
 
+]
 
+
+---
+layout: false
+class: center, middle
 
 # From Reeb graph to **Mapper**
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+???
 
 Let's look at the discrete counterpart of the Reeb graph
+
+
+---
+class: middle, center
 
 ## Simplicial Complex
 ## Nerve
 ## Mapper
 
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+
+
+---
+
+layout: false
 # Simplicial Complex
 
 
-<img src="../images/Simplicial_complex_example.svg.png" alt="some_text" style="width:650px;height:400px;">
+<img src="images/Simplicial_complex_example.svg.png" alt="some_text" style="width:650px;height:400px;">
 
 
 .footnote[Photo from [TreverGoodchild Wikipedia](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
 
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
+
+
+---
+
+layout: true
 # Nerve
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
 
 
 
+---
+
+
+.left-column[
+
+]
+.right-column[
 
 Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
 
 
 $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \ne \emptyset \right\\} $$
 
+]
 
+---
+
+.left-column[
+
+]
+.right-column[
 
 Given open sets \\( \{\mathcal{O}_i\} \\) indexed over a set \\(I\\), the nerve is defined as
 
@@ -295,19 +488,35 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 
 ### This is a simplicial complex!
 
+]
 
+---
+
+
+.left-column[
 ## Open cover
 
+]
+.right-column[
 
-<img src="../images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
+
+<img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[Photo from James Salvatore, Applying Topology to Data]
 
+]
 
+---
+
+
+.left-column[
 ## Open cover
 ## Add vertices
 
-<img src="../images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
+]
+.right-column[
+
+<img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[Photo from James Salvatore, Applying Topology to Data]
 
@@ -322,7 +531,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 ## Add simplices
 ]
 .right-column[
-<img src="../images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
@@ -337,7 +546,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 ## Add simplices
 ]
 .right-column[
-<img src="../images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
@@ -347,6 +556,8 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 
 layout: true
 # Mapper
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
 
 
 
@@ -496,7 +707,7 @@ Build nerve from partial clusters!
 
 ---
 
-<img src="../images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
+<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
@@ -505,14 +716,14 @@ complex data using topology, 2013]
 
 ---
 
-<img src="../images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
 
 ---
 
-<img src="../images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
+<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
@@ -546,6 +757,8 @@ Twitter: [@\_ropthe\_](https://twitter.com/_ropthe_)
 
 Github: [sauln](https://github.com/sauln/)
 
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
+
 
 
 ---
@@ -560,3 +773,5 @@ G. Singh, F. Memoli, and G. Carlsson. Topological Methods for the analysis of hi
 Lum et al. Extracting insights from the shape of complex data using Topology, *Nature Scientific Reports*, 2013
 
 Torres et al, Tracking Resilience to Infections by Mapping Disease Space, *PLOS Biology*, 2016
+
+<div class="my-footer"><span>Nathaniel Saul | Washington State University - Vancouver</span></div>
