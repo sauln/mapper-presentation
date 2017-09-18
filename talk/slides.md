@@ -19,7 +19,7 @@ layout: true
 ]
 .right-column[
 
-<img src="images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
+<img src="../images/humongousData.jpg" alt="some_text" style="width:324px;height:297px;">
 
 ]
 
@@ -65,9 +65,9 @@ It is not a panacea for data analytics, but it is a useful tool for exploratory 
 ]
 .right-column[
 
-<img src="images/oldComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+<img src="../images/oldComputer.jpg" alt="some_text" style="width:348px;height:196px;">
 
-<img src="images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
+<img src="../images/newComputer.jpg" alt="some_text" style="width:348px;height:196px;">
 
 
 .footnote[Photos thanks to [ChillOutPoint.com](http://www.chilloutpoint.com/featured/old-photos-of-the-first-generation-of-computers.html) and
@@ -95,7 +95,7 @@ LOTS of data and LOTS of processing power... two essential ingredients, no recip
 .right-column[
 
 
-<img src="images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
+<img src="../images/coffeetodonut.jpg" alt="some_text" style="width:600px;height:400px;">
 
 .footnote[Bruce Nauman, Fingers and Holes, 1994]
 
@@ -166,7 +166,7 @@ class: center
 
 ---
 
-<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
+<img src="../images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
@@ -174,7 +174,7 @@ complex data using topology, 2013]
 
 ---
 
-<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
+<img src="../images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
 
 .footnote[Lum et al, Extracting insights from the shape of
@@ -182,7 +182,7 @@ complex data using topology, 2013]
 
 ---
 
-<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+<img src="../images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
@@ -258,7 +258,7 @@ Let \\(a \sim b \\) for \\(a,b \in X\\) if \\(f(a)\\) is connected to \\(f(b)\\)
 
 
 Two points are path **connected** if you can draw a line from one to the other without leaving the space.
-<img src="images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
+<img src="../images/path_connected.png" alt="some_text" style="width:600px;height:250px;">
 .footnote[Photo from [Maths Trek Blog](https://mathstrek.blog/2013/03/07/topology-path-connected-spaces/)]
 
 ]
@@ -281,7 +281,7 @@ Two points are path **connected** if you can draw a line from one to the other w
 
 The **level set** at each \\(a \in \mathbb{R}\\) is the set
 $$\\{ x \in X \mid f(x) = a \\}$$
-<img src="images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
+<img src="../images/level_sets.jpg" alt="some_text" style="width:500px;height:350px;">
 
 .footnote[Photo from [Level-set method wikipedia](https://en.wikipedia.org/wiki/Level-set_method)]
 
@@ -308,7 +308,7 @@ $$\\{ x \in X \mid f(x) = a \\}$$
 The Reeb graph is the quotient space \\(X / \sim\\) endowed with the quotient topology.
 
 
-<img src="images/reebmultitorus.gif" alt="some_text" style="width:500px;height:300px;">
+<img src="../images/reebmultitorus.gif" alt="some_text" style="width:500px;height:300px;">
 
 .footnote[Photo from [Silvia Biasotti](http://old.cescg.org/CESCG-2001/SBiasotti/index.html)]
 
@@ -328,7 +328,7 @@ class: center, middle
 
 ---
 
-<img src="images/reebmultitorus.png" alt="some_text" style="width:700px;height:500px;">
+<img src="../images/reebmultitorus.png" alt="some_text" style="width:700px;height:500px;">
 
 .footnote[Photo from Edelsbrunner and Harer's Computational Topology]
 
@@ -442,7 +442,7 @@ layout: false
 # Simplicial Complex
 
 
-<img src="images/Simplicial_complex_example.svg.png" alt="some_text" style="width:650px;height:400px;">
+<img src="../images/Simplicial_complex_example.svg.png" alt="some_text" style="width:650px;height:400px;">
 
 
 .footnote[Photo from [TreverGoodchild Wikipedia](https://en.wikipedia.org/wiki/Simplicial_complex#/media/File:Simplicial_complex_example.svg)]
@@ -500,7 +500,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 .right-column[
 
 
-<img src="images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="../images/nerve1.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[Photo from James Salvatore, Applying Topology to Data]
 
@@ -516,7 +516,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 ]
 .right-column[
 
-<img src="images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="../images/nerve2.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[Photo from James Salvatore, Applying Topology to Data]
 
@@ -531,7 +531,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 ## Add simplices
 ]
 .right-column[
-<img src="images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="../images/nerve3.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
@@ -546,7 +546,7 @@ $$ N(\mathcal{O}) = \left\\{ J \subseteq I \mid \bigcap_{j\in J} \mathcal{O}_j \
 ## Add simplices
 ]
 .right-column[
-<img src="images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
+<img src="../images/nerve4.svg" alt="some_text" style="width:550px;height:350px;">
 
 .footnote[.red.bold[\*]James Salvatore, Applying Topology to Data]
 
@@ -707,7 +707,7 @@ Build nerve from partial clusters!
 
 ---
 
-<img src="images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
+<img src="../images/voting_small.jpeg" alt="some_text" style="width:700px;height:300px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
@@ -716,14 +716,14 @@ complex data using topology, 2013]
 
 ---
 
-<img src="images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
+<img src="../images/disease_small.png" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Torres et al, Tracking Resilience to Infections by Mapping Disease Space, 2016]
 
 
 ---
 
-<img src="images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
+<img src="../images/basketball.jpg" alt="some_text" style="width:700px;height:400px;">
 
 .footnote[Lum et al, Extracting insights from the shape of
 complex data using topology, 2013]
